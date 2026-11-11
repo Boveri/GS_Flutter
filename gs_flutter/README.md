@@ -44,27 +44,18 @@ Pequenos comércios e condomínios acumulam diariamente papelão, plástico, lat
 
 ##  Fluxo de telas
 
-```mermaid
-flowchart TD
-    S[Splash] -->|introdução já vista| H
-    S -->|primeiro acesso| O[Onboarding - 4 páginas]
-    O -->|Começar / Pular| H
-
-    subgraph H[Home - barra de navegação inferior]
-        I[Início - painel de impacto]
-        A[Agendar - novo lote]
-        L[Lotes & Rotas - lista + busca + filtros]
-        E[ODS & Equipe]
-    end
-
-    I -->|toca em um lote| D
-    L -->|toca em um lote - protocolo| D[Detalhes do Lote]
-    A -->|sucesso: protocolo + PIN| L
-    D -->|PIN correto - ReciboColeta| R[Certificado de Impacto]
-    R -->|voltar| D
-    D -->|voltar / excluir| L
-    E -->|Rever introdução| O
 ```
+Splash -> Introdução (só na primeira vez) -> Home
+```
+
+Na Home tem uma barra embaixo com 4 abas:
+
+- **Início**: mostra o total reciclado, o CO2 evitado e o ganho estimado.
+- **Agendar**: formulário para cadastrar um lote novo. O endereço vem do CEP (ViaCEP). No final aparece o protocolo e o PIN.
+- **Lotes & Rotas**: lista dos lotes, com busca e filtro. Clicando em um lote abre a tela de **Detalhes**.
+- **ODS & Equipe**: integrantes do grupo e os ODS do projeto.
+
+Na tela de **Detalhes** o coletor pode reservar o lote e depois digitar o PIN. Se o PIN estiver certo, abre a tela do **Certificado** com o impacto da coleta.
 
 | Tela | Descrição |
 | --- | --- |
@@ -81,7 +72,12 @@ flowchart TD
 
 ##  Prints das telas
 
-
+<img width="1279" height="887" alt="Screenshot 2026-11-10 214156" src="https://github.com/user-attachments/assets/c562f86c-6a25-4ea2-961c-995fbafb789b" />
+<img width="1276" height="882" alt="Screenshot 2026-11-10 214222" src="https://github.com/user-attachments/assets/7a43924f-5dea-4403-aa7c-8c739c985b9d" />
+<img width="1279" height="887" alt="Screenshot 2026-11-10 214238" src="https://github.com/user-attachments/assets/28100baa-2867-42f9-9e64-96a282e1a75c" />
+<img width="1279" height="885" alt="Screenshot 2026-11-10 214345" src="https://github.com/user-attachments/assets/8d79c465-ffee-4bc3-805d-e91ee280c14b" />
+<img width="1279" height="886" alt="Screenshot 2026-11-10 214413" src="https://github.com/user-attachments/assets/1f3a031d-6fce-4ff5-8356-9bafed8a3188" />
+<img width="1279" height="882" alt="Screenshot 2026-11-10 214437" src="https://github.com/user-attachments/assets/94d728a6-b268-4fcb-a8ed-0fa7f12818d1" />
 
 ---
 
